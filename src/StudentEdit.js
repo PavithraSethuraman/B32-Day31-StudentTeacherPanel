@@ -37,8 +37,8 @@ function StudentEdit() {
       if (!values.class) {
         errors.class = "Class should not be blank";
       }
-      if (!values.age || values.age < 18) {
-        errors.age = "Age should not be blank and should be greater than 18";
+      if (!values.age || values.age > 18) {
+        errors.age = "Age should not be blank and should be less than 18";
       }
       if (!values.grade) {
         errors.grade = "Grade should not be blank ";

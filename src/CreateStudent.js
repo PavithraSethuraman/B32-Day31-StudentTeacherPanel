@@ -24,7 +24,7 @@ function CreateUser() {
       if (!values.class) {
         errors.class = "Class should not be blank";
       }
-      if (!values.age || values.age < 18) {
+      if (!values.age || values.age > 18) {
         errors.age = "Age should not be blank and should be lessthan than 18";
       }
       if (!values.grade) {
